@@ -1,0 +1,56 @@
+{
+    "name": "sas",
+    "displayName": "sas",
+    "description": "Language support for sas language",
+    "version": "0.0.1",
+    "publisher": "pvparuchuri",
+    "author": {
+		"name": "Venkata Paruchuri",
+		"url": "https://github.com/pvparuchuri"
+	},
+    "icon": "icon.png",
+    "galleryBanner": {
+		"color": "#8D9DAB",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/pvparuchuri/vscode-sas",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pvparuchuri/vscode-sas.git"
+    },
+    "bugs": { 
+        "url": "https://github.com/pvparuchuri/vscode-sas/issues" 
+    },
+    "engines": { 
+        "vscode": "*" 
+    },
+    "categories": [
+        "Programming Languages",
+        "Formatters",
+        "Snippets",
+        "Other"	    
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "sas",
+                "aliases": ["sas"],
+                "extensions": [".sas"],
+                "configuration": "./languages/sas.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "sas",
+                "scopeName": "source.sas",
+                "path": "./syntaxes/sas.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "sas",
+                "path": "./snippets/sas.json"
+            }
+        ]
+    }
+}
